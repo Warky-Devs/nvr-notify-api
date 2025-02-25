@@ -1,0 +1,88 @@
+{
+    "name": "Comprehensive Vivotek NVR Event Test",
+    "description": "Tests various event types and scenarios for the Vivotek NVR API",
+    "events": [
+      {
+        "eventType": "MotionDetection",
+        "deviceId": "NVR001",
+        "channelId": "Camera01",
+        "delaySeconds": 0,
+        "eventDetails": {
+          "zoneId": "MainEntrance",
+          "confidence": 95
+        }
+      },
+      {
+        "eventType": "MotionDetection",
+        "deviceId": "NVR001",
+        "channelId": "Camera02",
+        "delaySeconds": 1,
+        "eventDetails": {
+          "zoneId": "BackYard",
+          "confidence": 75
+        }
+      },
+      {
+        "eventType": "VideoLoss",
+        "deviceId": "NVR001",
+        "channelId": "Camera03",
+        "delaySeconds": 2,
+        "eventDetails": {
+          "duration": 15,
+          "cause": "cable disconnected"
+        }
+      },
+      {
+        "eventType": "DeviceConnection",
+        "deviceId": "NVR002",
+        "channelId": "",
+        "delaySeconds": 3,
+        "eventDetails": {
+          "status": "disconnected",
+          "reason": "network failure"
+        }
+      },
+      {
+        "eventType": "DeviceConnection",
+        "deviceId": "NVR002",
+        "channelId": "",
+        "delaySeconds": 5,
+        "eventDetails": {
+          "status": "connected",
+          "reason": "network restored"
+        }
+      },
+      {
+        "eventType": "MotionDetection",
+        "deviceId": "NVR001",
+        "channelId": "Camera01",
+        "delaySeconds": 2,
+        "eventDetails": {
+          "zoneId": "MainEntrance",
+          "confidence": 98,
+          "objectType": "person"
+        }
+      },
+      {
+        "eventType": "TamperDetection",
+        "deviceId": "NVR001",
+        "channelId": "Camera04",
+        "delaySeconds": 3,
+        "eventDetails": {
+          "type": "covered",
+          "severity": "high"
+        }
+      },
+      {
+        "eventType": "StorageFailure",
+        "deviceId": "NVR001",
+        "channelId": "",
+        "delaySeconds": 2,
+        "eventDetails": {
+          "disk": "HDD1",
+          "errorCode": "S-404",
+          "remainingSpace": "50MB"
+        }
+      }
+    ]
+  }

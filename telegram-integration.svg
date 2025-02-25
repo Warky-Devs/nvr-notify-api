@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f5f5f5"/>
+  
+  <!-- Vivotek NVR -->
+  <rect x="50" y="150" width="120" height="100" rx="10" fill="#0078d7" stroke="#005a9e" stroke-width="2"/>
+  <text x="110" y="200" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Vivotek NVR</text>
+  
+  <!-- API Server -->
+  <rect x="340" y="150" width="120" height="100" rx="10" fill="#4caf50" stroke="#388e3c" stroke-width="2"/>
+  <text x="400" y="200" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Go API Server</text>
+  
+  <!-- Telegram -->
+  <rect x="630" y="150" width="120" height="100" rx="10" fill="#2196f3" stroke="#1976d2" stroke-width="2"/>
+  <text x="690" y="182" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Telegram</text>
+  <text x="690" y="210" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Bot API</text>
+  
+  <!-- Camera Icon -->
+  <circle cx="80" y="120" r="15" fill="#0078d7" stroke="#005a9e" stroke-width="1"/>
+  <rect x="70" y="105" width="20" height="10" rx="2" fill="#0078d7" stroke="#005a9e" stroke-width="1"/>
+  
+  <!-- Mobile Phone -->
+  <rect x="680" y="80" width="30" height="50" rx="3" fill="#2196f3" stroke="#1976d2" stroke-width="1"/>
+  <rect x="685" y="85" width="20" height="30" rx="1" fill="white" stroke="#1976d2" stroke-width="0.5"/>
+  <circle cx="695" y="123" r="3" fill="white" stroke="#1976d2" stroke-width="0.5"/>
+  
+  <!-- HTTP Request Arrow -->
+  <line x1="170" y1="200" x2="320" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="245" y="190" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">HTTP Event</text>
+  
+  <!-- Telegram API Arrow -->
+  <line x1="460" y1="200" x2="610" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="535" y="190" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Notification</text>
+  
+  <!-- Motion detected messages -->
+  <rect x="500" y="100" width="120" height="60" rx="15" fill="white" stroke="#2196f3" stroke-width="1.5"/>
+  <text x="560" y="125" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">🚨 Motion</text>
+  <text x="560" y="145" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Detected!</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">Vivotek NVR Telegram Integration</text>
+  
+  <!-- Labels -->
+  <text x="110" y="270" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Event Source</text>
+  <text x="400" y="270" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Event Processor</text>
+  <text x="690" y="270" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Notification</text>
+</svg>
