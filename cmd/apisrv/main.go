@@ -619,7 +619,8 @@ func main() {
 	http.HandleFunc("/events", basicAuth(handleEvent)) // Alternative endpoint
 
 	// Add HIKVision alarm server endpoint
-	http.HandleFunc("/hikvision/alarm/hikvision/alarm", basicAuth(handleHikVisionAlarm))
+
+	http.HandleFunc("/hikvision/alarm", basicAuth(handleHikVisionAlarm))
 
 	// Start the HTTP server
 	serverAddr := fmt.Sprintf(":%s", state.Config.ServerPort)
