@@ -24,3 +24,4 @@ go.work.sum
 # env file
 .env
 vivotek_events.log
+config.json

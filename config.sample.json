@@ -1,11 +1,11 @@
 {
     "server_port": "8080",
     "log_file": "vivotek_events.log",
-    "notify_url": "https://your-notification-service.com/webhook",
+    "notify_url": "",
     "auth_username": "admin",
     "auth_password": "your-secure-password",
-    "telegram_enabled": true,
-    "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "telegram_enabled": false,
+    "telegram_token": "7131547115:AAFq0IwkaFHU_tKS3dep28x2CjadCVkTIPs",
     "telegram_chat_id": "YOUR_CHAT_ID"
   }
   

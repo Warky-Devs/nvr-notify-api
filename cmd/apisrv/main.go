@@ -75,6 +75,8 @@ func initConfig() error {
 	}
 
 	state.Logger = log.New(logOutput, "VIVOTEK-API: ", log.LstdFlags)
+
+	fmt.Printf("Config loaded, handing off logs to %s...\n", state.Config.LogFile)
 	return nil
 }
 
@@ -296,6 +298,7 @@ var startTime time.Time
 
 func main() {
 	startTime = time.Now()
+	fmt.Print("Starting NVR API...\n")
 
 	// Initialize configuration
 	if err := initConfig(); err != nil {
@@ -309,7 +312,8 @@ func main() {
 
 	// Start the HTTP server
 	serverAddr := fmt.Sprintf(":%s", state.Config.ServerPort)
-	state.Logger.Printf("Starting Vivotek NVR Event Handler API on %s", serverAddr)
+	state.Logger.Printf("Starting NVR Event Handler API on %s", serverAddr)
+	fmt.Printf("Starting NVR Event Handler API on %s\n", serverAddr)
 	if err := http.ListenAndServe(serverAddr, nil); err != nil {
 		state.Logger.Fatalf("Failed to start server: %v", err)
 	}
