@@ -5,7 +5,10 @@
     "auth_username": "admin",
     "auth_password": "your-secure-password",
     "telegram_enabled": false,
-    "telegram_token": "7131547115:AAFq0IwkaFHU_tKS3dep28x2CjadCVkTIPs",
-    "telegram_chat_id": "YOUR_CHAT_ID"
+    "telegram_token": "YOUR_CHAT_TOKEN",
+    "telegram_chat_id": "YOUR_CHAT_ID",
+    "hik_enabled": false,
+    "hik_username": "hikvision",
+    "hik_password": "hikvision-password"
   }
   
